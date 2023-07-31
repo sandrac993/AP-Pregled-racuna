@@ -1,7 +1,5 @@
 # AP-Pregled-racuna
 
-# Social Media - Flask app
-
 ## Create **venv**
 ### Windows
     python -m venv venv
