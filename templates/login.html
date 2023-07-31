@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prijava</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Prijava</h1>
+    <form action="{{ url_for('login') }}" method="post">
+        <input type="email" name="email" placeholder="E-mail adresa" required>
+        <input type="password" name="password" placeholder="Lozinka" required>
+        <button type="submit">Prijavi se</button>
+    </form>
+    <a href="{{ url_for('index') }}">Povratak na početnu stranicu</a>
+</body>
+</html>
+{% endblock %}

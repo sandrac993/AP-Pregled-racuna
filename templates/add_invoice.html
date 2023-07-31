@@ -1,0 +1,16 @@
+<!-- templates/add_invoice.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dodaj račun</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Dodaj račun</h1>
+    <form action="{{ url_for('add_invoice') }}" method="post">
+        <!-- Dodajte polja za unos informacija o računu -->
+        <button type="submit">Dodaj račun</button>
+    </form>
+    <a href="{{ url_for('invoices') }}">Povratak na pregled računa</a>
+</body>
+</html>

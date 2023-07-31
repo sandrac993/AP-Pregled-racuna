@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Štampanje računa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Račun broj: {{ invoice.invoice_number }}</h1>
+    <p>Datum: {{ invoice.date }}</p>
+    <img src="{{ url_for('static', filename='racun.png') }}" alt="Račun">
+    <a href="javascript:window.print()">Štampaj račun</a>
+    <a href="{{ url_for('invoices') }}">Povratak na pregled računa</a>
+</body>
+</html>

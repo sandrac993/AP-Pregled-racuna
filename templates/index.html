@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Izdavanje računa</title>
+</head>
+<body>
+<body background ="static/racuni.png" > <br>
+
+    <h1>Dobrodošli!</h1>
+
+     <h2><br> Pregledajte svoje racune i fakture na jednom mjestu!</h2>
+             <br>
+             <h3>IZVOĐENJE BL d.o.o </h3>
+
+            <br/><br/>
+<p>Ulogujte se za pristup podacima:</p>
+
+    <div class="links">
+        <a href="{{ url_for('registration') }}">Registracija</a>
+        <a href="{{ url_for('login') }}">Prijava</a>
+    </div>
+</body>
+</html>
+{% endblock %}

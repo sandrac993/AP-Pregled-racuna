@@ -1,0 +1,20 @@
+<!-- templates/invoices.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pregled računa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Pregled računa</h1>
+
+    {% for invoice in invoices %}
+        <div class="invoice">
+            <p>Račun broj: {{ invoice.invoice_number }}</p>
+            <p>Datum: {{ invoice.date }}</p>
+        </div>
+    {% endfor %}
+    <a href="{{ url_for('add_invoice') }}">Dodaj račun</a>
+    <a href="{{ url_for('index') }}">Povratak na početnu stranicu</a>
+</body>
+</html>
